@@ -1,0 +1,67 @@
+{
+    "center": [17.0466, 51.0736],
+    "defaultZoom": 9,
+    "interactions":{
+        "draw":[
+            "LineString",
+            "Polygon",
+            "Point"
+        ]
+    },
+    "WMS": [
+            {
+                "url": "https://mapy.geoportal.gov.pl/wss/service/PZGIK/ORTO/WMS/StandardResolution",
+                "params": {"LAYERS": "Raster"},
+                "serverType": "geoserver",
+                "name": "Orfototomapa"
+            },
+            {
+                "url": "http://212.180.216.237/geoserver/igik/wms",
+                "params": {"LAYERS": "cmp1000_all"},
+                "serverType": "geoserver",
+                "name": "cmp1000"
+            },
+            {
+                "url": "http://localhost:8080/geoserver/HPARIMR-23/wms",
+                "params": {"LAYERS": "HPARIMR-23:powiat_olkuski_malopolska", "TILED": "true"},
+                "serverType": "geoserver",
+                "name": "Powiat Olkuski"
+            },
+            {
+                "url": "http://localhost:8080/geoserver/HPARIMR-23/wms",
+                "params": {"LAYERS": "HPARIMR-23:rzeka_raba"},
+                "serverType": "geoserver",
+                "name": "Rzeka Raba"
+            },
+            {
+                "url": "http://localhost:8080/geoserver/HPARIMR-23/wms",
+                "params": {"LAYERS": "HPARIMR-23:miasto_limanowa"},
+                "serverType": "geoserver",
+                "name": "Miasto Limanowa"
+            },
+            {
+                "url": "http://localhost:8080/geoserver/HPARIMR-23/wms",
+                "params": {"LAYERS": "HPARIMR-23:miasto_limanowa_buffer_100"},
+                "serverType": "geoserver",
+                "name": "Miasto Limanowa buffer 100"
+            },
+            {
+                "url": "http://localhost:8080/geoserver/HPARIMR-23/wms",
+                "params": {"LAYERS": "HPARIMR-23:powiat_nowotarski"},
+                "serverType": "geoserver",
+                "name": "PowiatNowotarski"
+            },
+            {
+                "url": "http://localhost:8080/geoserver/HPARIMR-23/wms",
+                "params": {"LAYERS": "HPARIMR-23:reka_raba_inter_powiat_nowotarski"},
+                "serverType": "geoserver",
+                "name": "RzekaRabainterPowaitNowotarski"
+            },
+            {
+                "url": "http://localhost:8080/geoserver/topp/wms",
+                "params": {"LAYERS": "topp:states"},
+                "serverType": "geoserver",
+                "name": "States"
+            }
+    ]
+}
